@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.6 on linux)" generated="20230215 14:38:09.681" rpa="false" schemaversion="3">
+<suite id="s1" name="TC01" source="/home/appwrk/PycharmProjects/pythonProject/TestCases/TC01.robot">
+<test id="s1-t1" name="Contact_us_check" line="8">
+<kw name="Open URL">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://appwrk.com/</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230215 14:38:09.791" level="INFO">Opening browser 'gc' to base url 'https://appwrk.com/'.</msg>
+<status status="PASS" starttime="20230215 14:38:09.791" endtime="20230215 14:38:19.721"/>
+</kw>
+<status status="PASS" starttime="20230215 14:38:09.791" endtime="20230215 14:38:19.722"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230215 14:38:19.722" endtime="20230215 14:38:19.834"/>
+</kw>
+<kw name="Open Contact_US">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[normalize-space()='Contact us']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230215 14:38:19.836" level="INFO">Clicking element 'xpath://a[normalize-space()='Contact us']'.</msg>
+<status status="PASS" starttime="20230215 14:38:19.835" endtime="20230215 14:38:23.327"/>
+</kw>
+<status status="PASS" starttime="20230215 14:38:19.834" endtime="20230215 14:38:23.327"/>
+</kw>
+<kw name="Input Name">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Your Name']</arg>
+<arg>Steven</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230215 14:38:23.328" level="INFO">Typing text 'Steven' into text field 'xpath://input[@placeholder='Your Name']'.</msg>
+<status status="PASS" starttime="20230215 14:38:23.328" endtime="20230215 14:38:23.425"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230215 14:38:25.425" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230215 14:38:23.425" endtime="20230215 14:38:25.426"/>
+</kw>
+<status status="PASS" starttime="20230215 14:38:23.327" endtime="20230215 14:38:25.426"/>
+</kw>
+<kw name="Input Email">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Your Email']</arg>
+<arg>s.steven.3115@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230215 14:38:25.428" level="INFO">Typing text 's.steven.3115@gmail.com' into text field 'xpath://input[@placeholder='Your Email']'.</msg>
+<status status="PASS" starttime="20230215 14:38:25.427" endtime="20230215 14:38:25.558"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230215 14:38:27.558" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230215 14:38:25.558" endtime="20230215 14:38:27.559"/>
+</kw>
+<status status="PASS" starttime="20230215 14:38:25.426" endtime="20230215 14:38:27.559"/>
+</kw>
+<kw name="Selecting Country Code">
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>countryList</arg>
+<arg>() +54</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20230215 14:38:27.561" level="INFO">Selecting options from selection list 'countryList' by value () +54.</msg>
+<msg timestamp="20230215 14:38:28.009" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230215 14:38:28.009" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: () +54
+</msg>
+<status status="FAIL" starttime="20230215 14:38:27.560" endtime="20230215 14:38:28.015"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230215 14:38:28.015" endtime="20230215 14:38:28.015"/>
+</kw>
+<status status="FAIL" starttime="20230215 14:38:27.559" endtime="20230215 14:38:28.015"/>
+</kw>
+<status status="FAIL" starttime="20230215 14:38:09.790" endtime="20230215 14:38:28.016">NoSuchElementException: Message: Cannot locate option with value: () +54
+</status>
+</test>
+<status status="FAIL" starttime="20230215 14:38:09.682" endtime="20230215 14:38:28.017"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC01">TC01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
